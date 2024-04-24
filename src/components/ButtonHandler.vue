@@ -49,12 +49,13 @@ const onImageUpload = (e) => {
 
 const onImageButtonClick = () => {
   // if not streaming
-  if (streaming.value === null) inputImageRef.value.click();
-  // closing image streaming
-  else if (streaming.value === "image") closeImage();
-  else
+  if (streaming.value === null) {
+    inputImageRef.value.click();
+  } else if (streaming.value === "image") {
+    closeImage();
+  } else
     alert(
-      `Can't handle more than 1 stream\nCurrently streaming : ${streaming}`
+      `Can't handle more than 1 stream\nCurrently streaming : ${streaming.value}`
     );
 };
 
@@ -71,7 +72,6 @@ const onVideoUpload = (e) => {
 const onWebcamButtonClick = () => {
   // if not streaming
   if (streaming.value === null || streaming.value === "image") {
-    // closing image streaming
     if (streaming.value === "image") closeImage();
     webcam.open(cameraRef.value);
     cameraRef.value.style.display = "block";
@@ -92,8 +92,9 @@ const onVideoButtonClick = () => {
   // if not streaming
   if (streaming.value === null || streaming.value === "image") {
     inputVideoRef.value.click();
-  } else if (streaming.value === "video") closeVideo();
-  else {
+  } else if (streaming.value === "video") {
+    closeVideo();
+  } else {
     alert(
       `Can't handle more than 1 stream\nCurrently streaming : ${streaming.value}`
     );

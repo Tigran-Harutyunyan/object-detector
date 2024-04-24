@@ -56,9 +56,9 @@ onMounted(() => {
     >
     <template v-else>
       <div class="header">
-        <h1>YOLOv8 Live Detection App</h1>
+        <h1>YOLO v8 Live Detection</h1>
         <p>
-          YOLOv8 live detection application on browser powered by
+          YOLO v8 live detection application on browser powered by
           <code>tensorflow.js</code>
         </p>
         <p>

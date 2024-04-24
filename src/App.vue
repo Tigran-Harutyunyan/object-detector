@@ -1,7 +1,7 @@
 <script setup>
-import YOLOv8 from "./components/YOLOv8.vue";
+import YOLO from "./components/YOLO.vue";
 </script>
 
 <template>
-  <YOLOv8 />
+  <YOLO />
 </template>
