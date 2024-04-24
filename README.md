@@ -1,5 +1,7 @@
 # Object Detection using YOLOv8 and Tensorflow.js
 
+[Live Demo](https://yolo-live-detection.vercel.app)
+
 Features:
 
 - Allows to upload photo, video or use camera to detect objects in 80 categories
