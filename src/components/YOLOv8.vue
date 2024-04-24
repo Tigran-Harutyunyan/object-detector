@@ -2,6 +2,8 @@
 import { ref, onMounted } from "vue";
 import Loader from "./Loader.vue";
 import ButtonHandler from "./ButtonHandler.vue";
+import * as tf from "@tensorflow/tfjs";
+
 import "@tensorflow/tfjs-backend-webgl"; //
 import { detect, detectVideo } from "../utils/detect";
 
